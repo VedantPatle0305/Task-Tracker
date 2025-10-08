@@ -23,7 +23,7 @@ struct AddEditTaskView: View {
             TextField("Task Title", text: $title)
                 .textFieldStyle(.roundedBorder)
             
-            DatePicker("Due Date", selection: $dueDate, displayedComponents: .date)
+            DatePicker("Due Date", selection: $dueDate, in: Date()..., displayedComponents: .date)
             
             HStack {
                 Button("Cancel"){

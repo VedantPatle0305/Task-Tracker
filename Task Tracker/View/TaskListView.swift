@@ -50,13 +50,13 @@ struct TaskListView: View {
                         .padding()
                         .buttonStyle(.borderless)
                         
-//                        Button {
-//                            viewModel.delete(task: task)
-//                        } label: {
-//                            Image(systemName: "trash")
-//                        }
-//                        .padding()
-//                        .buttonStyle(.borderless)
+                        Button {
+                            viewModel.delete(task: task)
+                        } label: {
+                            Image(systemName: "trash")
+                        }
+                        .padding()
+                        .buttonStyle(.borderless)
 
                     }
                     .contextMenu {
